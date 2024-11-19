@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portofolioo!!</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div id="loader">
+      <div id="wrapperLoad">
+        <div class="elem">
+          <img src="name.png" alt="" />
+        </div>
+        <div class="elem"><h3>UI/UX Desiginer.</h3></div>
+        <div class="elem">Loves to help brands to grow.</div>
+      </div>
+    </div>
+    <div id="bg">
+      <nav>
+        <img src="logo.png" alt="" />
+        <div id="links">
+          <a class="navitem" href="">Home</a>
+          <a class="navitem" href="">Contact</a>
+          <i class="navitem ri-search-line"></i>
+          <i id="menu" class="navitem ri-menu-2-line"></i>
+        </div>
+      </nav>
+      <div id="sections">
+        <img class="leftitem" id="splash" src="rightSplash.png" alt="" />
+        <div class="leftitem" id="left">
+          <div class="leftitem" id="smline"></div>
+          <h4 class="leftitem">Hello, I am 👋</h4>
+          <img class="leftitem" src="name.png" alt="" />
+          <h5 class="leftitem">
+            a desdigner from <span id="lblue">ukraine.</span>
+          </h5>
+          <div class="leftitem" id="playbtn">
+            <img src="playButton.png" alt="" />
+            <h5><span class="bold">see my</span> work profile</h5>
+          </div>
+          <div class="leftitem" id="contact">
+            <h3>Contact me</h3>
+            <h6>Email:<span>sam@gmail.com</span></h6>
+            <h6>Contact number: <span>9876543217</span></h6>
+          </div>
+        </div>
+        <div id="right">
+          <img src="mainImage.png" alt="" />
+        </div>
+      </div>
+    </div>
+    <script>
+      var menu = document.querySelector("#menu");
+      var bg = document.querySelector("#bg");
+
+      menu.addEventListener("click", function () {
+        bg.style.transform = "scale(0.8)";
+        bg.style.bordrRadius = "10px";
+        bg.style.boxShadow = "0 150px 45px -100px rgb(0,0,0,0.2)";
+      });
+    </script>
+    <script src="script.js"></script>
+  </body>
+</html>
